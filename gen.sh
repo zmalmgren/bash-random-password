@@ -1,5 +1,5 @@
 #!/bin/bash
-# generates a random password, the first and only arguement determines the length of the password. Max length of 249 characters.
+# generates a random string, the first and only arguement determines the length. Max length of 249 characters.
 
 if [ $1 -lt "250" ]; then
 #checks first arguement to make sure its less than 250
@@ -13,7 +13,7 @@ if [ $1 -lt "250" ]; then
 	ASSHAT=0
 	#zeros the variable cuz we're done with it
 
-	exit 1
+	exit 0
 fi
 
 echo "ERROR: You don't need a password that long. 249 chars max"

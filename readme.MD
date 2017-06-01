@@ -1,4 +1,4 @@
-#Bash script for generating a random password
+# Bash script for generating a random string, for use as a password
 Takes the desired length as the only arguement. Outputs letters, numbers and symbols (no spaces).
 
 Example usage:
@@ -7,5 +7,5 @@ Example usage:
 
 
 
-##Disclaimer:
-Don't use this for anything even vaguely important. I know nothing, dont trust me. This is my third bash script ever.
+## Disclaimer:
+The source of randomness is /dev/urandom, which is good as far as I have read, but don't trust it with your life or anything.
