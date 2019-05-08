@@ -1,0 +1,11 @@
+# New to GitHub, and bored at work... Sorry if this is not intersting
+# Relative bash newbie as well, so, grain of salt. ;-)
+
+# While statistically unlikely, it is not impossible that the 1k of random data your dd command is pulling will not have enough printable
+# characters for what will ultimately be your password output.
+
+# I was thinking this command might replace lines 8,11,14.
+# This pulls :graph: characters (https://www.gnu.org/software/grep/manual/html_node/Character-Classes-and-Bracket-Expressions.html)
+# from urandom until there are enough to satisfy the number of characters in the head command.
+# This way there is zero chance of not having enough characters (OK, odds of winning the lotter type stuff, but still).
+< /dev/urandom tr -cd "[:graph:]" | head -c $1; echo
